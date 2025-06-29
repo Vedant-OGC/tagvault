@@ -1,0 +1,150 @@
+/* TagVault CSS */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0e0e0e;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: rgba(30, 30, 30, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #444;
+}
+
+.logo {
+  height: 40px;
+}
+
+#search {
+  flex: 1;
+  margin: 0 20px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #1f1f1f;
+  color: white;
+  font-size: 16px;
+}
+
+#submitServerBtn {
+  background: #6c63ff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+#submitServerBtn:hover {
+  background: #837bff;
+}
+
+table {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: rgba(20, 20, 20, 0.9);
+  backdrop-filter: blur(5px);
+}
+
+thead {
+  background: #202020;
+  color: #aaa;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+tr:hover {
+  background-color: rgba(100, 100, 100, 0.1);
+}
+
+#removalRequest {
+  text-align: right;
+  margin: 10px 30px;
+  font-size: 14px;
+  color: #999;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+footer {
+  background: #111;
+  padding: 20px;
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+}
+
+.icons a {
+  margin: 0 10px;
+  color: #bbb;
+  text-decoration: none;
+}
+
+.icons a:hover {
+  color: white;
+}
+
+.legal {
+  margin-top: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  color: white;
+  text-align: center;
+}
+
+.modal-content input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background: #2a2a2a;
+  color: white;
+}
+
+.modal-content button {
+  margin-top: 10px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.modal-content button:hover {
+  background: #817aff;
+}
