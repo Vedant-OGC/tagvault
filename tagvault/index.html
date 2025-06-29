@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TagVault</title>
+  <link rel="stylesheet" href="tagvault.css">
+  <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="TagVault Logo" class="logo">
+    <input type="text" id="search" placeholder="Search server by name...">
+    <button id="submitServerBtn">Submit Your Server</button>
+  </header>
+
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th>Server Tag</th>
+          <th>Member Count</th>
+          <th>Name</th>
+          <th>Invite</th>
+          <th>Server ID</th>
+        </tr>
+      </thead>
+      <tbody id="serverTable"></tbody>
+    </table>
+
+    <div id="removalRequest">
+      <span id="requestRemove">Don't want your server listed? Request removal</span>
+    </div>
+  </main>
+
+  <footer>
+    <div class="icons">
+      <a href="https://github.com/Vedant-OGC" target="_blank">GitHub</a>
+      <a href="https://discord.gg/YOURSERVER" target="_blank">Discord</a>
+      <a href="mailto:you@example.com">Email</a>
+    </div>
+    <p class="legal">Not affiliated with Discord Inc. "Discord" is a registered trademark of Discord Inc.</p>
+    <p class="legal">Created by Vedant • <a href="#">Privacy</a> • <a href="#">Terms</a></p>
+  </footer>
+
+  <!-- Modals -->
+  <div class="modal" id="removalModal">
+    <div class="modal-content">
+      <h3>Request Removal</h3>
+      <p>If you would like to have your server removed from this page, you can:</p>
+      <ul>
+        <li>Revoke the invite listed on this page and disable the server widget in server settings. This page removes invalid invites automatically after a few hours.</li>
+        <li>Or send an email with your Server ID. We'll ask you to add a verification text to your server description before removing it.</li>
+      </ul>
+      <button id="closeModal">Close</button>
+    </div>
+  </div>
+
+  <div class="modal" id="submitModal">
+    <div class="modal-content">
+      <h3>Submit Your Server</h3>
+      <input type="text" id="serverName" placeholder="Server Name">
+      <input type="text" id="serverId" placeholder="Server ID">
+      <input type="text" id="serverInvite" placeholder="Permanent Invite Link">
+      <input type="text" id="memberCount" placeholder="Member Count">
+      <input type="text" id="tagImg" placeholder="Tag Image URL">
+      <button id="submitForm">Submit</button>
+      <button id="closeSubmitModal">Cancel</button>
+    </div>
+  </div>
+
+  <script src="tagvault.js"></script>
+</body>
+</html>
